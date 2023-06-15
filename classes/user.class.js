@@ -15,6 +15,15 @@ const conectarse = () => {
 
 export default class {
 
+    insert = async function(post_params) {
+        let db = conectarse();
+        return await db.insert(post_params).into('users').then(() => {
+            return true
+        }).finally(() => {
+            db.destroy()
+        })
+    }
+
     list = async function(get_params) {
 
         let db = conectarse();
