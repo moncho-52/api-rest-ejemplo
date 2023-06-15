@@ -5,7 +5,7 @@ const conectarse = () => {
         client: 'mysql',
         connection: {
             user: 'root',
-            password: '',
+            password: 'vanni',
             server: 'localhost',
             port: 3306,
             database: 'proyecto_pruebas'
